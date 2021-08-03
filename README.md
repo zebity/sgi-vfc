@@ -1,9 +1,12 @@
 # sgi-vfc
 This repository is to make SGI / IRIX Video Format Compiler (vfc) specification files available
 ## No license
-Nothing placed here should be licensed or protected.
-Nothing is guaranteed
-This is just to help others to use or publish additional .vfs specs and montitor data
+Nothing placed here should be licensed or protected. 
+
+Nothing is guaranteed/warranted.
+
+This is just to help others to use or publish additional .vfs specs and montitor data.
+
 ## Compiling .vfs files
 1. Install the Video Format Compiler
 2. Create your .vfs spec
