@@ -9,8 +9,4 @@ This is just to help others to use or publish additional .vfs specs and montitor
 2. Create your .vfs spec
 3. Compile for your specific graphics system
 
-NOTE: .vfo files are specific to a given graphics type
-
-      But your special monitor .vfs spec can be compiled against different graphics architecture definitions
-      
-      So you have source rather than binary compatability
+NOTE: .vfo files are specific to a given graphics type, but your special monitor .vfs spec can be compiled against different graphics architecture definitions. So you have source rather than binary compatability
