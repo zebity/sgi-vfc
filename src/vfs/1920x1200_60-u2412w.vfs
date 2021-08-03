@@ -1,0 +1,71 @@
+/*
+ what: video spec for Dell U2412W monitor using
+         EDID information obtained powerstrip (win) / get-edid (linux)
+*/ 
+General { 
+ FormatName = "1920x1200_60-U2412W"; 
+
+ FieldsPerFrame          = 1; 
+ FramesPerSecond         = 59.94; 
+ TotalLinesPerFrame      = 1235; 
+ TotalPixelsPerLine      = 2080; 
+ ActiveLinesPerFrame     = 1200; 
+ ActivePixelsPerLine     = 1920; 
+} 
+Active Line { 
+ HorizontalBackPorch     = 80 pixels; 
+ HorizontalSync          = 32 pixels; 
+ HorizontalFrontPorch    = 48 pixels; 
+} 
+Field { 
+ Vertical Sync = 
+ { 
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  } 
+  repeat 6          <<== vfc cacluations results in this being 7
+  { 
+  Length = 1.0H; 
+  } 
+ } 
+ Initial Low; 
+ Vertical Back Porch = 
+ { 
+  { 
+  Length = 1.0H; 
+  High = HorizontalSync; 
+  } 
+  repeat 24            <<=== Subtract 2 (was 26)
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  High = HorizontalSync; 
+  } 
+ } 
+ Initial High; 
+ Active = 
+ { 
+ repeat 1200 
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  High = HorizontalSync; 
+  } 
+ } 
+ Vertical Front Porch = 
+ { 
+ repeat 3 
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  High = HorizontalSync; 
+  } 
+ } 
+} 
+#if 0 
+postprocess 
+{ 
+dump edge; 
+} 
+#endif
