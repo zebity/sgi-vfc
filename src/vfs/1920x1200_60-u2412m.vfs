@@ -1,9 +1,13 @@
 /*
- what: video spec for Dell U2412W monitor using
+ what: video spec for Dell U2412M monitor using
          EDID information obtained powerstrip (win) / get-edid (linux)
+
+ note: vertical back porch - EDID = 26 but changed to 24 to compensate for vfc
+
+ author: John Hartley
 */ 
 General { 
- FormatName = "1920x1200_60-U2412W"; 
+ FormatName = "1920x1200_60-U2412M"; 
 
  FieldsPerFrame          = 1; 
  FramesPerSecond         = 59.94; 
@@ -24,7 +28,7 @@ Field {
   Length = 1.0H; 
   Low = 0.0 usec; 
   } 
-  repeat 6          <<== vfc cacluations results in this being 7
+  repeat 6
   { 
   Length = 1.0H; 
   } 
@@ -36,7 +40,7 @@ Field {
   Length = 1.0H; 
   High = HorizontalSync; 
   } 
-  repeat 24            <<=== Subtract 2 (was 26)
+  repeat 24
   { 
   Length = 1.0H; 
   Low = 0.0 usec; 
