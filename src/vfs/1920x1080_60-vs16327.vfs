@@ -1,0 +1,75 @@
+/*
+ what: video spec for ViewSonic VS16327 monitor using
+         EDID information from: powerstrip (win)
+
+ note: vertical back porch - EDID = 36 but changed to 34 to compensate for vfc
+
+ author: John Hartley
+*/ 
+General { 
+ FormatName = "1920x1200_60-VS16327"; 
+
+ FieldsPerFrame          = 1; 
+ FramesPerSecond         = 60.00; 
+ TotalLinesPerFrame      = 1125; 
+ TotalPixelsPerLine      = 2200; 
+ ActiveLinesPerFrame     = 1080; 
+ ActivePixelsPerLine     = 1920; 
+} 
+Active Line { 
+ HorizontalBackPorch     = 148 pixels; 
+ HorizontalSync          = 44 pixels; 
+ HorizontalFrontPorch    = 88 pixels; 
+} 
+Field { 
+ Vertical Sync = 
+ { 
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  } 
+  repeat 5
+  { 
+  Length = 1.0H; 
+  } 
+ } 
+ Initial Low; 
+ Vertical Back Porch = 
+ { 
+  { 
+  Length = 1.0H; 
+  High = HorizontalSync; 
+  } 
+  repeat 34
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  High = HorizontalSync; 
+  } 
+ } 
+ Initial High; 
+ Active = 
+ { 
+ repeat 1080
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  High = HorizontalSync; 
+  } 
+ } 
+ Vertical Front Porch = 
+ { 
+ repeat 4 
+  { 
+  Length = 1.0H; 
+  Low = 0.0 usec; 
+  High = HorizontalSync; 
+  } 
+ } 
+} 
+#if 0 
+postprocess 
+{ 
+dump edge; 
+} 
+#endif

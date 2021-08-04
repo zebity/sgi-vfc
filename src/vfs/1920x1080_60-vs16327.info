@@ -1,0 +1,24 @@
+1920x1080_60-vs16327.vfo:
+ Total lines per frame:   1125
+ Total pixels per line:   2200
+ Active lines per frame:  1080
+ Active pixels per line:  1920
+ Frames per second:       60
+ Fields per frame:        1
+ Swaps per frame:         1
+ Pixel clock:             148.5 MHz, period = 6.73401 nsec
+ Hardware pixel rounding:  every 4 pixels
+ Line analysis: 
+  Length:                 2200 Pixels, 1 Lines, 14.8148 usec; (line 0)
+  Frequency:              67.5 KHz, period = 14.8148 usec
+ Horizontal Sync:         44 Pixels, 296.296 nsec; (line 41)
+ Horizontal Back Porch:   148 Pixels, 996.633 nsec; (line 41)
+ Horizontal Active:       1920 Pixels, 12.9293 usec; (line 41)
+ Horizontal Front Porch:  88 Pixels, 592.593 nsec; (line 41)
+ Field Information:
+  Field Duration:           2.475e+06 Pixels, 1125 Lines, 16.6667 msec; (line 0)
+  Vertical Sync:            13200 Pixels, 6 Lines, 88.8889 usec; (line 0)
+  Vertical Sync Pulse:      13244 Pixels, 6.02 Lines, 89.1852 usec; (line 0)
+  Vertical Back Porch:      77000 Pixels, 35 Lines, 518.519 usec; (line 6)
+  Vertical Active:          2.376e+06 Pixels, 1080 Lines, 16 msec; (line 41)
+  Vertical Front Porch:     8800 Pixels, 4 Lines, 59.2593 usec; (line 1121)
