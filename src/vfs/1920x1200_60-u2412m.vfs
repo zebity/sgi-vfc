@@ -1,6 +1,6 @@
 /*
  what: video spec for Dell U2412M monitor using
-         EDID information obtained powerstrip (win) / get-edid (linux)
+         EDID information from: powerstrip (win) / get-edid (linux)
 
  note: vertical back porch - EDID = 26 but changed to 24 to compensate for vfc
 
