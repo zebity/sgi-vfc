@@ -2,7 +2,8 @@
  what: video spec for Dell U2412M monitor using
          EDID information from: powerstrip (win) / get-edid (linux)
 
- note: vertical back porch - EDID = 26 but changed to 24 to compensate for vfc
+ note: vertical back porch - EDID = 26 , changed to 25 to compensate for vfc
+       vertical sync - EDID = 6 , changed to 5 to compensate for vfc 
 
  author: John Hartley
 */ 
@@ -28,7 +29,7 @@ Field {
   Length = 1.0H; 
   Low = 0.0 usec; 
   } 
-  repeat 6
+  repeat 5
   { 
   Length = 1.0H; 
   } 
@@ -40,7 +41,7 @@ Field {
   Length = 1.0H; 
   High = HorizontalSync; 
   } 
-  repeat 24
+  repeat 25
   { 
   Length = 1.0H; 
   Low = 0.0 usec; 

@@ -2,7 +2,8 @@
  what: video spec for ViewSonic VS16327 monitor using
          EDID information from: powerstrip (win)
 
- note: vertical back porch - EDID = 36 but changed to 34 to compensate for vfc
+ note: vertical back porch - EDID = 36 , changed to 35 to compensate for vfc
+       vertical sync - EDID - 5 , changed to 4 to compensate for vfc 
 
  author: John Hartley
 */ 
@@ -28,7 +29,7 @@ Field {
   Length = 1.0H; 
   Low = 0.0 usec; 
   } 
-  repeat 5
+  repeat 4
   { 
   Length = 1.0H; 
   } 
@@ -40,7 +41,7 @@ Field {
   Length = 1.0H; 
   High = HorizontalSync; 
   } 
-  repeat 34
+  repeat 35
   { 
   Length = 1.0H; 
   Low = 0.0 usec; 

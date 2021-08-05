@@ -16,8 +16,9 @@
  Horizontal Active:       1920 Pixels, 12.4696 usec; (line 32)
  Horizontal Front Porch:  48.0001 Pixels, 311.742 nsec; (line 32)
  Field Information:
-  Field Duration:           2.5688e+06 Pixels, 1235 Lines, 16.6834 msec; (line 0
-)
-  Vertical Sync:            14560 Pixels, 7 Lines, 94.5615 usec; (line 0)
-  Vertical Sync Pulse:      14592 Pixels, 7.01538 Lines, 94.7693 usec; (line 0)
-  Vertical Back Porch:      52000 Pixels, 25 Lines, 337.72 usec; (line 7)
+  Field Duration:           2.5688e+06 Pixels, 1235 Lines, 16.6834 msec; (line 0)
+  Vertical Sync:            12480 Pixels, 6 Lines, 81.0527 usec; (line 0)
+  Vertical Sync Pulse:      12512 Pixels, 6.01538 Lines, 81.2605 usec; (line 0)
+  Vertical Back Porch:      54080 Pixels, 26 Lines, 351.228 usec; (line 6)
+  Vertical Active:          2.496e+06 Pixels, 1200 Lines, 16.2105 msec; (line 32)
+  Vertical Front Porch:     6240 Pixels, 3 Lines, 40.5264 usec; (line 1232)
